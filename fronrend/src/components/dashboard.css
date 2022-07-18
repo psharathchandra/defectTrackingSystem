@@ -1,0 +1,30 @@
+.card-icon{
+    font-size: 300%;
+}
+
+@media(min-width:991px){
+    .card-content{
+        min-height: 86px;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:990px){
+    .card-icon{
+        font-size:250%;
+    }
+    .card-title{
+        font-size: 19px;
+    }
+    .card-content{
+        min-height: 86px;
+    }
+
+}
+@media(min-width:375px) and (max-width:575px){
+    
+    .card-title{
+        font-size: 25px;
+    }
+}
+

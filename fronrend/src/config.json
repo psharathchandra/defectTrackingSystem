@@ -1,0 +1,20 @@
+{
+  "SERVER_URL": "http://localhost:5000/",
+  "BE_SERVER_URL": "http://localhost:8080/api/",
+  "USERS_TABLE_LENGTH": 2,
+  "BUGS_TABLE_LENGTH": 2,
+
+  "REPORTS_PAGE_TITLE": "Reports",
+  "PROJECTS_PAGE_TITLE": "Manage Projects",
+  "DEFECTS_PAGE_TITLE": "Manage Bugs",
+  "USERS_PAGE_TITLE": "Manage Users",
+  "APP_TITLE": "Defect Tracking System",
+
+  "USER_LINK_NAME": "Users",
+  "PROJECT_LINK_NAME": "Projects",
+  "DEFECTS_LINK_NAME": "Defects",
+  "REPORTS_LINK_NAME": "Reports",
+
+  "DATE_FORMAT_OBJECT": { "timeStyle": "short", "dateStyle": "medium" },
+  "DATE_REGION": "en-IN"
+}

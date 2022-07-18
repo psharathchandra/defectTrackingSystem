@@ -1,0 +1,204 @@
+{
+  "users": [
+    {
+      "email": "admin@dts.com",
+      "username": "admin",
+      "password": "123456",
+      "project": "",
+      "role": "ADMIN",
+      "createddate": "29-Mar-2022, 10:01 am",
+      "modifieddate": "29-Mar-2022, 10:01 am",
+      "id": 0
+    },
+    {
+      "username": "rishitha",
+      "email": "rishitha@dts.com",
+      "password": "123456",
+      "role": "EMPLOYEE",
+      "project": "0",
+      "createddate": "29-Mar-2022, 10:01 am",
+      "modifieddate": "29-Mar-2022, 10:01 am",
+      "id": 6
+    },
+    {
+      "username": "dharma",
+      "email": "dharma@dts.com",
+      "password": "123456",
+      "role": "PROJECTMANAGER",
+      "createddate": "29-Mar-2022, 10:01 am",
+      "modifieddate": "29-Mar-2022, 10:01 am",
+      "project": 1,
+      "id": 7
+    },
+    {
+      "username": "visithra",
+      "email": "visithra@dts.com",
+      "password": "123456",
+      "role": "EMPLOYEE",
+      "project": "1",
+      "createddate": "29-Mar-2022, 10:02 am",
+      "modifieddate": "29-Mar-2022, 10:02 am",
+      "id": 8
+    },
+    {
+      "username": "kumar",
+      "email": "kumar@gmail.com",
+      "password": "123456",
+      "role": "PROJECTMANAGER",
+      "createddate": "29-Mar-2022, 11:08 am",
+      "modifieddate": "29-Mar-2022, 11:08 am",
+      "project": 0,
+      "id": 9
+    },
+    {
+      "username": "krishna",
+      "email": "krishna@dts.com",
+      "password": "123456",
+      "role": "PROJECTMANAGER",
+      "project": 2,
+      "createddate": "29-Mar-2022, 11:09 am",
+      "modifieddate": "29-Mar-2022, 11:09 am",
+      "id": 10
+    },
+    {
+      "username": "vishal",
+      "email": "vishal@dts.com",
+      "password": "123456",
+      "role": "PROJECTMANAGER",
+      "createddate": "29-Mar-2022, 11:09 am",
+      "modifieddate": "29-Mar-2022, 11:09 am",
+      "project": "",
+      "id": 11
+    },
+    {
+      "username": "kiran",
+      "email": "kiran@dts.com",
+      "password": "123456",
+      "role": "EMPLOYEE",
+      "project": "2",
+      "createddate": "29-Mar-2022, 11:11 am",
+      "modifieddate": "29-Mar-2022, 11:11 am",
+      "id": 13
+    },
+    {
+      "username": "kumar",
+      "email": "kumar@dts.com",
+      "password": "123456",
+      "role": "EMPLOYEE",
+      "project": "2",
+      "createddate": "29-Mar-2022, 11:22 am",
+      "modifieddate": "29-Mar-2022, 11:22 am",
+      "id": 14
+    },
+    {
+      "username": "karthik",
+      "email": "kar@dts.com",
+      "password": "123456",
+      "role": "EMPLOYEE",
+      "project": "4",
+      "createddate": 1648883903170,
+      "modifieddate": 1648883903170,
+      "id": 15
+    }
+  ],
+  "projects": [
+    {
+      "projecttitle": "dts",
+      "startdate": "2021-09-11",
+      "enddate": "2080-10-11",
+      "id": 0
+    },
+    {
+      "projecttitle": "library",
+      "startdate": "2021-10-09",
+      "enddate": "2021-10-12",
+      "id": 1
+    },
+    {
+      "projecttitle": "food ordering",
+      "startdate": "2021-10-11",
+      "enddate": "2021-11-10",
+      "id": 2
+    },
+    {
+      "projecttitle": "ecommerce",
+      "startdate": "2022-01-11",
+      "enddate": "2023-01-12",
+      "id": 4
+    }
+  ],
+  "bugs": [
+    {
+      "bugproject": "1",
+      "bugsummary": "login issue",
+      "bugdescription": "unable to login",
+      "bugtype": "BUG",
+      "bugseverity": "LOW",
+      "bugassignedto": "8",
+      "bugstatus": "COMPLETED",
+      "createddate": "2022-03-25T18:13:48.411Z",
+      "modifieddate": "2022-03-30T18:13:48.411Z",
+      "id": 8
+    },
+    {
+      "bugproject": "1",
+      "bugsummary": "create employee",
+      "bugdescription": "create a employee role which cant be deleted and edited",
+      "bugtype": "TASK",
+      "bugseverity": "LOW",
+      "bugassignedto": "8",
+      "bugstatus": "TO DO",
+      "createddate": "2022-03-26T18:13:48.411Z",
+      "modifieddate": "2022-03-30T18:13:48.411Z",
+      "id": 9
+    },
+    {
+      "bugproject": "1",
+      "bugsummary": "create dummy project",
+      "bugdescription": "create a dummy project and employees should be thrown into it",
+      "bugtype": "TASK",
+      "bugseverity": "LOW",
+      "bugassignedto": "8",
+      "bugstatus": "IN PROGRESS",
+      "createddate": "2022-03-27T18:13:48.411Z",
+      "modifieddate": "2022-05-04T10:03:59.044Z",
+      "id": 10
+    },
+    {
+      "bugproject": "0",
+      "bugsummary": "performance issues",
+      "bugdescription": "there is a delay in getting data from server and loading",
+      "bugtype": "BUG",
+      "bugseverity": "HIGH",
+      "bugassignedto": "6",
+      "bugstatus": "TO DO",
+      "createddate": "2022-03-28T18:13:48.411Z",
+      "modifieddate": "2022-03-30T18:13:48.411Z",
+      "id": 11
+    },
+    {
+      "bugproject": "1",
+      "bugsummary": "buttons not working",
+      "bugdescription": "some buttons are not redirecting to the correct page on click and button are not responsive in mobile.",
+      "bugtype": "STORY",
+      "bugseverity": "MEDIUM",
+      "bugassignedto": "8",
+      "bugstatus": "COMPLETED",
+      "createddate": "2022-03-29T18:13:48.411Z",
+      "modifieddate": "2022-03-30T18:13:48.411Z",
+      "id": 12
+    },
+    {
+      "bugsummary": "sudden shutdown",
+      "bugdescription": "system shutdown suddenly",
+      "bugtype": "BUG",
+      "bugseverity": "MEDIUM",
+      "bugproject": "2",
+      "bugassignedto": "13",
+      "bugstatus": "TO DO",
+      "createddate": "2022-02-19T18:13:48.411Z",
+      "modifieddate": "2022-03-30T18:13:48.411Z",
+      "id": 13
+    }
+  ]
+}
