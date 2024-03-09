@@ -4,10 +4,7 @@
   "USERS_TABLE_LENGTH": 2,
   "BUGS_TABLE_LENGTH": 2,
 
-  "REPORTS_PAGE_TITLE": "Reports",
-  "PROJECTS_PAGE_TITLE": "Manage Projects",
-  "DEFECTS_PAGE_TITLE": "Manage Bugs",
-  "USERS_PAGE_TITLE": "Manage Users",
+  
   "APP_TITLE": "Defect Tracking System",
 
   "USER_LINK_NAME": "Users",
