@@ -126,7 +126,7 @@ function LoginForm() {
           </div>
 
           <div className="form-group">
-            <label for="email">
+            <label htmlFor="email">
               <b>Email Address</b> <span className="text-danger">*</span>
             </label>
             <input
@@ -135,7 +135,7 @@ function LoginForm() {
               value={inputs.email}
               onBlur={validateEmail}
               onChange={handleChange}
-              class="form-control"
+              className="form-control"
               placeholder="Enter email"
               id="email"
             />
@@ -143,8 +143,8 @@ function LoginForm() {
             <div className="text-danger">{errors.email}</div>
           </div>
 
-          <div class="form-group">
-            <label for="password">
+          <div className="form-group">
+            <label htmlFor="password">
               <b>Password </b>
               <span className="text-danger">*</span>
             </label>
@@ -154,7 +154,7 @@ function LoginForm() {
               value={inputs.password}
               onBlur={validatePassword}
               onChange={handleChange}
-              class="form-control"
+              className="form-control"
               placeholder="Enter password"
               id="password"
             />
@@ -162,8 +162,8 @@ function LoginForm() {
             <div className="text-danger">{errors.password}</div>
           </div>
 
-          <div class="form-group d-flex justify-content-between align-items-center">
-            <input class="btn logbutton" type="submit" value="Login" />
+          <div className="form-group d-flex justify-content-between align-items-center">
+            <input className="btn logbutton" type="submit" value="Login" />
 
             <Link
               style={{ color: "blue" }}
