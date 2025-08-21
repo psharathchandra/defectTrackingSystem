@@ -451,7 +451,7 @@ function Users() {
             >
               <i
                 style={{ color: "white", fontSize: "150%" }}
-                class="bi bi-pencil-square"
+                className="bi bi-pencil-square"
               ></i>
             </button>
             &nbsp;

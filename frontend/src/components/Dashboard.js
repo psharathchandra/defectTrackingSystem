@@ -21,14 +21,14 @@ function Dashboard() {
 
     const step = async () => {
         const current = await axios.get(`${config.SERVER_URL}users`)
-        setrecent(current.data);
+        setrecent(current.data.records);
         console.log(current);
         //  return current;
 
     }
     const projectget = async () => {
         const p = await axios.get(`${config.SERVER_URL}projects`)
-        setProjects(p.data);
+        setProjects(p.data.records);
         console.log(p);
 
 
@@ -36,7 +36,7 @@ function Dashboard() {
 
     const bugget = async () => {
         const p = await axios.get(`${config.SERVER_URL}bugs`)
-        setBugs(p.data);
+        setBugs(p.data.records);
 
 
     }

@@ -13,7 +13,7 @@ function LoginForm() {
 
   useEffect(() => {
     axios.get(`${config.SERVER_URL}users`).then((res) => {
-      const persons = res.data;
+      const persons = res.data.records;
       setJsonUserDetails(persons);
     });
   }, []);

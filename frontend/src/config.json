@@ -1,5 +1,5 @@
 {
-  "SERVER_URL": "http://localhost:5000/",
+  "SERVER_URL": "http://localhost:8080/api/",
   "BE_SERVER_URL": "http://localhost:8080/api/",
   "USERS_TABLE_LENGTH": 2,
   "BUGS_TABLE_LENGTH": 2,
