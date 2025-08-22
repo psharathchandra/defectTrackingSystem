@@ -26,27 +26,23 @@ git clone https://github.com/yourusername/defectTrackingSystem.git
 cd defectTrackingSystem
 ```
 
-#### 2. Set Up the Frontend
-Navigate to the `frontend` directory and install dependencies:
+#### 2. Setup MongoDB
+Ensure MongoDB is installed on your system or hosted on cloud. Use the following command to start MongoDB connection in local:
 ```bash
-cd frontend
-npm install
+sudo mongod --dbpath <mongodb data/db path here>
 ```
-Start the frontend:
-```bash
-npm start
-```
+create a database named `DefectTrackingSystem` with `users` collection add record given in `backend/dbintial.json`
 
 #### 3. Set Up the Backend
 Navigate to the `backend` directory and install dependencies:
 ```bash
-cd ../backend
+cd backend
 npm install
 ```
-Configure the database connection in the `config/db.js` file:
+Configure the database connection in the `config/db.configjs` file:
 ```javascript
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/defectTrackingSystem'
+    url: 'mongodb://localhost:27017/defectTrackingSystem' //or cloud connection string
 };
 ```
 Start the backend:
@@ -54,11 +50,20 @@ Start the backend:
 npm start
 ```
 
-#### 4. Start MongoDB
-Ensure MongoDB is running on your system. Use the following command to start MongoDB:
+#### 4. Set Up the Frontend
+Navigate to the `frontend` directory and install dependencies:
 ```bash
-mongod
+cd frontend
+npm install
 ```
+check   "SERVER_URL" property in `config.json` to match backend server port
+Start the frontend:
+```bash
+npm start
+```
+
+
+
 
 ### Access the Application
 Once the frontend and backend are running, open your browser and navigate to:
