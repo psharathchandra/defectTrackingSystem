@@ -1,6 +1,7 @@
 # Ignore node_modules in frontend
-/frontend/node_modules/
-/backend/node_modules/
+**/node_modules/
+**/node_modules/
 
 # Ignore macOS DS_Store files
 **/.DS_Store
+**/.env
