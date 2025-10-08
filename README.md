@@ -1,4 +1,5 @@
 # defectTrackingSystem
+[![Watch the Demo](assets/demoRecording.mp4)](assets/demoRecording.mp4)
 ## About This Project
 
 The `defectTrackingSystem` is a comprehensive tool designed to help teams track, manage, and resolve defects in their software development lifecycle. It provides a centralized platform for logging issues, assigning tasks, and monitoring progress to ensure efficient defect resolution.
@@ -6,7 +7,7 @@ The `defectTrackingSystem` is a comprehensive tool designed to help teams track,
 ### Demo Video
 For a quick overview of how the `defectTrackingSystem` works, check out the demo video located in the `assets` folder:
 
-[![Watch the Demo](assets/demoRecording.mp4)](assets/demoRecording.mp4)
+
 
 
 ### Features
