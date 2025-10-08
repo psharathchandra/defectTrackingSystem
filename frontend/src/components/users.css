@@ -1,0 +1,18 @@
+.user-head{
+    padding-top: 15px;
+}
+
+.users-table{
+    padding-top:40px;
+}
+table {
+    width: 100%;
+    
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px;
+    
+}

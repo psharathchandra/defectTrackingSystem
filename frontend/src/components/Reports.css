@@ -1,0 +1,30 @@
+.user-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  th {
+    background-color: slateblue;
+    color: #ffffff;
+  }
+  
+  td {
+    background-color: rgb(205, 193, 233);
+  }
+  
