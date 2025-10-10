@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoginHeader from './LoginHeader'
 import LoginForm from './LoginForm'
+import config from "../config.json";
 
 export function ChangePassword() {
     const [inputs, setInputs] = useState({ oldPassword: "", newPassword: "" });
@@ -18,7 +19,7 @@ export function ChangePassword() {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/users`)
+        axios.get(`${config.BE_SERVER_URL}users`)
             .then(res => {
                 const persons = res.data;
                 setJsonUserDetails(persons);
@@ -137,7 +138,7 @@ export function ChangePassword() {
 
     return (
         <>
-            {authToken.id >= 0 &&<> <TopNav />
+            {authToken.id!==undefined &&<> <TopNav />
             <div className="d-flex justify-content-center mt-5 row">
                 <Col sm={8} md={6} lg={4}>
                 <Card style={{ border: "1px solid slateblue", boxShadow: "3px 6px 6px slateblue" }}>
@@ -145,7 +146,7 @@ export function ChangePassword() {
                         <Card.Title><b className="d-flex justify-content-center">Change Password</b></Card.Title>
                         <Card.Text className="mt-3">
                             <form className='form' >
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="oldpassword"><b>Old Password <span className='text-danger'>*</span></b></label>
                                     <input
                                         type="password"
@@ -153,7 +154,7 @@ export function ChangePassword() {
                                         value={inputs.oldPassword}
                                         onChange={handleChange}
                                         onBlur={validateOld}
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Enter password"
                                         id="oldpassword" />
 
@@ -167,7 +168,7 @@ export function ChangePassword() {
                                         value={inputs.newPassword}
                                         onBlur={validateNew}
                                         onChange={handleChange}
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Enter password"
                                         id="newpassword" />
 

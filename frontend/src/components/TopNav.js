@@ -43,7 +43,7 @@ function TopNav() {
                     <Dropdown.Item style={{padding:"5px 10px"}}><Link  style={{color:"black", textDecoration:"none", fontSize:"15px"}} to="/changepassword">Change Password</Link></Dropdown.Item>
 
                   <Dropdown.Divider/>
-                    <Dropdown.Item style={{color:"black", padding:"5px 10px"}} href="/">Logout &nbsp;<i class="bi bi-box-arrow-right"></i></Dropdown.Item>
+                    <Dropdown.Item style={{color:"black", padding:"5px 10px"}} href="/">Logout &nbsp;<i className="bi bi-box-arrow-right"></i></Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               {/* </NavDropdown> */}

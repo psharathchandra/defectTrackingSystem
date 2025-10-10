@@ -48,6 +48,8 @@ function Defects() {
   const [jsonbugs, setJsonBugs] = useState([]);
   const [searchinput, setSearchInput] = useState("");
 
+
+
   useEffect(() => {
     const fetchb = async () => {
       dispatch({ type: "SETSPINNER", data: { display: true } });
@@ -71,7 +73,7 @@ function Defects() {
             });
           }
         })
-        .catch((err) => {
+        .catch(() => {
           dispatch({ type: "SETSPINNER", data: { display: false } });
           toast.warning("Unable to fetch defects", {
             position: toast.POSITION.BOTTOM_LEFT,
@@ -81,17 +83,33 @@ function Defects() {
     };
     fetchb();
 
-    if (authToken.role === "PROJECTMANAGER") {
-      let projectstring = authToken.project.toString();
-      let resPMUsers = json_users.filter(
-        (json_user) => json_user.project === projectstring && projectstring
-      );
-      setProjectFilteredUsers(resPMUsers);
-      setFormInputs((values) => ({
-        ...values,
-        bugproject: authToken.project.toString(),
-      }));
-    }
+    const fetchUsers = async () => {
+      try {
+        const res = await axios.get(`${config.SERVER_URL}users`);
+        const persons = res.data.records;
+
+        if (authToken.role === "PROJECTMANAGER") {
+          let projectstring = authToken.project.toString();
+          console.log(persons); // Log the fetched users
+          console.log(projectstring);
+          let resPMUsers = persons.filter(
+            (json_user) => json_user.project === projectstring && projectstring
+          );
+          setProjectFilteredUsers(resPMUsers);
+          setFormInputs((values) => ({
+            ...values,
+            bugproject: authToken.project.toString(),
+          }));
+        }
+      } catch (error) {
+        toast.warning("Unable to fetch users", {
+          position: toast.POSITION.BOTTOM_LEFT,
+          autoClose: 3000,
+        });
+      }
+    };
+
+    fetchUsers();
   }, []);
 
   const findAssignee = (id) => {

@@ -39,7 +39,7 @@ function LoginForm() {
                 email: user.email,
                 username: user.username,
                 role: user.role,
-                id: user.id,
+                id: user._id,
                 project: user.project,
               },
             });

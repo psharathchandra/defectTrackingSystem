@@ -171,7 +171,7 @@ function Dashboard() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {recent.slice(0, userstbllength).map((json) => <tr><td>{json.id}</td><td>{json.username}</td><td>{json.role}</td><td>{new Date(json.createddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(json.modifieddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>)}
+                                    {recent.slice(0, userstbllength).map((json) => <tr><td title={json._id}>{json._id.length > 5 ? json._id.slice(0, 5) + ".." : json._id}</td><td>{json.username}</td><td>{json.role}</td><td>{new Date(json.createdAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(json.updatedAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>)}
                                 </tbody>
                             </table>
                         </Col>
@@ -201,7 +201,7 @@ function Dashboard() {
                                 <tbody>
                                     {bugs.slice(0, bugtbllength).map((bug) => {
                                         return (
-                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.modifieddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
+                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createdAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.updatedAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
                                         )
                                     })}
                                 </tbody>
@@ -334,7 +334,7 @@ function Dashboard() {
                                     {bugs.filter((bug) => bug.bugproject === (authToken.project).toString()).slice(0, bugtbllength).map((bug) => {
 
                                         return (
-                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.modifieddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
+                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createdAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.updatedAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
                                         )
                                     }
                                     )}
@@ -362,7 +362,7 @@ function Dashboard() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {recent.filter((json) => json.project === authToken.project.toString() && authToken.project.toString()).slice(0, userstbllength).map((json) => <tr><td>{json.id}</td><td>{json.username}</td><td>{json.email}</td><td>{new Date(json.createddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(json.modifieddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>)}
+                                    {recent.filter((json) => json.project === authToken.project.toString() && authToken.project.toString()).slice(0, userstbllength).map((json) => <tr><td title={json._id}>{json._id.length > 5 ? json._id.slice(0, 5) + ".." : json._id}</td><td>{json.username}</td><td>{json.email}</td><td>{new Date(json.createdAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(json.updatedAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>)}
                                 </tbody>
                             </table>
                         </Col>
@@ -465,7 +465,7 @@ function Dashboard() {
                                     {bugs.filter((bug) => bug.bugassignedto === (authToken.id).toString()).slice(0, bugtbllength).map((bug) => {
 
                                         return (
-                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.modifieddate).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
+                                            <tr><td title={bug.bugsummary}>{bug.bugsummary.length < 15 ? bug.bugsummary : (bug.bugsummary.slice(0, 12) + "...")}</td><td title={bug.bugdescription}>{bug.bugdescription.length < 15 ? bug.bugdescription : (bug.bugdescription.slice(0, 12) + "...")}</td><td>{bug.bugproject}</td><td>{new Date(bug.createdAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td><td>{new Date(bug.updatedAt).toLocaleString(config.DATE_REGION, config['DATE_FORMAT_OBJECT'])}</td></tr>
                                         )
                                     }
                                     )}
