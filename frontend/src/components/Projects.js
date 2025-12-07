@@ -19,7 +19,7 @@ import "./projects.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TopNav from "./TopNav";
-import config from "../config.json";
+import config from "../configLoader";
 function Projects() {
   const dispatch = useDispatch();
   const [show, setShow] = useState(false);

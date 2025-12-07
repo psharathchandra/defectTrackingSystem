@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoginHeader from './LoginHeader'
 import LoginForm from './LoginForm'
-import config from "../config.json";
+import config from "../configLoader";
 
 export function ChangePassword() {
     const [inputs, setInputs] = useState({ oldPassword: "", newPassword: "" });

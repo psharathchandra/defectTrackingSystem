@@ -6,7 +6,7 @@ import LoginHeader from './LoginHeader';
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom'
 import axios from 'axios';
-import config from "../config.json";
+import config from "../configLoader";
 import './dashboard.css';
 
 function Dashboard() {

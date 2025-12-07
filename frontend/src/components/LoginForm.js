@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./LoginForm.css";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import config from "../config.json";
+import config from "../configLoader";
 
 function LoginForm() {
   const [inputs, setInputs] = useState({});

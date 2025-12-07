@@ -15,7 +15,7 @@ import axios from "axios";
 import { useEffect, useState, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { CSVLink } from "react-csv";
-import config from "../config.json";
+import config from "../configLoader";
 import Spinner from "react-bootstrap/Spinner";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";

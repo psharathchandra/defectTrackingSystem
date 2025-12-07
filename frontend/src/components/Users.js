@@ -21,7 +21,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./users.css";
 import TopNav from "./TopNav";
-import config from "../config.json";
+import config from "../configLoader";
 toast.configure();
 
 function Users() {

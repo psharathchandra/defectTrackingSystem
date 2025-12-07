@@ -19,7 +19,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import config from "../config.json";
+import config from "../configLoader";
 import LoginHeader from "./LoginHeader";
 import LoginForm from "./LoginForm";
 
