@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios';
 import config from "../configLoader";
 import './dashboard.css';
+import DemoLoginData from './DemoLoginData';
 
 function Dashboard() {
 
@@ -481,6 +482,7 @@ function Dashboard() {
     return (<>
         <LoginHeader />
         <LoginForm />
+        <DemoLoginData/>
     </>
 
     )
